@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style your form elements */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+/* Add more styling as needed */
+.question-fields {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question, .options, .option {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.question {
+    flex: 1; /* Take up remaining space */
+    margin-right: 0px; /* Add some spacing between question number and text */
+}
+
+
+.question input {
+    width: 50px; /* Set the width of the question number input */
+}
+.question .question_text{
+    width: 300px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.option {
+    width: calc(50% - 10px); /* 50% width with 10px spacing between options */
+}
